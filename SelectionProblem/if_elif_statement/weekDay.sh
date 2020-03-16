@@ -2,23 +2,26 @@
 read -p "enter the number : " number
 if [ $number -eq 0 ];
 then
-	echo "Sunday";
+	echo "Sunday"
 elif [ $number -eq 1 ];
 then
-	echo "Monday";
+	echo "Monday"
 elif [ $number -eq 2 ];
 then
-	echo "Tuesday";
+	echo "Tuesday"
 elif [ $number -eq 3 ];
 then
-	echo "wednesday";
+	echo "wednesday"
 elif [ $number -eq 4 ];
 then
-	echo "thusday";
+	echo "thusday"
 elif [ $number -eq 5 ];
 then
 	echo "Friday";
-else [ $number -eq 6 ];
-	echo "Saturday";
+elif [ $number -eq 6 ]
+then
+	echo "Saturday"
+else
+	echo "invalid number"
 fi
 
