@@ -9,6 +9,9 @@ then
 elif [ $number -eq 100 ];
 then
 	echo "Hundred";
-else [ $number -eq 1000 ];
+elif [ $number -eq 1000 ];
+then
 	echo "Thousand";
+else
+	echo "Invalid Unit Number";
 fi
