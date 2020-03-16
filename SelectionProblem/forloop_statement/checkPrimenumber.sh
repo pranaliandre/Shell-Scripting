@@ -1,5 +1,5 @@
 #!/bin/bash -x
-read -p "Enter number for checking prime or not : " number
+read -p "Enter number for checking prime or not: " number
 count=0
 for (( i=1;i<=$number;i++ ))
 do
