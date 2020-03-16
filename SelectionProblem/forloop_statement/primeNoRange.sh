@@ -2,6 +2,7 @@
 read -p "Enter the starting number: " begin
 read -p "Enter the ending number: " end
 for (( i=$begin;$i<=$end;i++))
+
 do
 	count=0
 	for (( j=1;$j<=$i;j++ ))
