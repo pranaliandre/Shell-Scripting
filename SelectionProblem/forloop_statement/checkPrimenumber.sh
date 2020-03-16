@@ -9,7 +9,7 @@ do
 
 	fi
 done
-if [ $count -eq 2 ];
+if [ $count -eq 2 ]
 then
 	echo "prime number"
 else
