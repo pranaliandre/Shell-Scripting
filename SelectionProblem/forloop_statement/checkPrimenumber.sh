@@ -7,7 +7,7 @@ do
 	then
 		(( count++ ))	
 
-fi
+	fi
 done
 if [ $count -eq 2 ];
 then
