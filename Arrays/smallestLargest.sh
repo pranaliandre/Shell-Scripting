@@ -1,11 +1,13 @@
 #!/bin/bash -x
 function smallestLargest(){
-	for (( i=1;i<10;i++ ))
+	for (( i=1;i<=10;i++ ))
 	do
 		number=$((RANDOM%1000))
 		if [ $number -ge 100 ] && [ $number -le 999 ]	
 		then
 			array[i]=$number
+		else
+			(( i-- ))
 		fi
 	done
 	echo ${array[@]}
