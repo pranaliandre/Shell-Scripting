@@ -35,7 +35,7 @@ read -p "Enter number" number
 prime=$(prime $number)
 checkpalindrome=$(palindrome $prime)
 result=$(prime $checkpalindrome) 
-if [ $prime -eq $result ]
+if [ $checkpalindrome -eq $result ]
 then
 	echo "palindrome number is also prime number"
 else
