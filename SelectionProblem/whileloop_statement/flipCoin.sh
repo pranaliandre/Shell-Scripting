@@ -11,14 +11,14 @@ do
 	else
 		(( Tails++ ))
 	fi
-if [ $Heads -eq 11 ]
-then
-	echo "Heads Win"
-	break
-elif [ $Tails -eq 11 ]
-then
-	echo "Tails win"
-	break
-fi
-(( count++ ))
+	if [ $Heads -eq 11 ]
+	then
+		echo "Heads Win"
+		break
+	elif [ $Tails -eq 11 ]
+	then
+		echo "Tails win"
+		break
+	fi
+	(( count++ ))
 done

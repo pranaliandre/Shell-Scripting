@@ -2,7 +2,6 @@
 
 declare -A dice
 diceValue=1
-
 function rollDice()
 {
 	while [[ dice[$diceValue] -ne 10  ]]
@@ -12,7 +11,6 @@ function rollDice()
 	done
 	echo "${!dice[@]} value= ${dice[@]}"
 }
-
 function MaxMinOccurance()
 {
 	order=$1
@@ -21,7 +19,6 @@ function MaxMinOccurance()
 		echo $i ${dice[$i]}
 	done | sort -k2 $order | head -n 1
 }
-
 rollDice
 maxOccurance="$(MaxMinOccurance '-rn' )"
 minOccurance="$(MaxMinOccurance '-n' )"
